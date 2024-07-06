@@ -1,0 +1,67 @@
+/* ===================== BASIC RESET STARTS ================== */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary_font: "Boska", serif;
+  --switzer_regular: "Switzer-Regular", serif;
+  --switzer_semibold: "Switzer-Semibold", serif;
+  --avenir_bold: "AvenirNextLTPro-Bold", serif;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* ===================== BASIC RESET ENDS ================== */
+
+/* =============== SWITZER FONT STARTS =============== */
+/* remember only h2 dont get semi-bold */
+@font-face {
+  font-family: "Switzer-Regular";
+  src: url("../fonts/switzer/fonts/Switzer-Regular.ttf");
+}
+@font-face {
+  font-family: "Switzer-Semibold";
+  src: url("../fonts/switzer/fonts/Switzer-Semibold.ttf");
+}
+
+/* =============== AVENIR FONT STARTS =============== */
+/* remember only h2 dont get semi-bold */
+@font-face {
+  font-family: "AvenirNextLTPro-Bold";
+  src: url("../fonts/avenir-next/AvenirNextLTPro-Bold.otf");
+}
+
+/* =============== AVENIR FONT STARTS =============== */
