@@ -191,7 +191,7 @@ body {
 }
 
 .feature_logo p {
-  color: #1b3936;
+  color: var(--secondary_color);
   font-size: 2.4rem;
   margin-top: 4.1rem;
   font-family: var(--switzer_regular);
@@ -437,4 +437,78 @@ body {
   transform: scale(0.9);
 }
 /* =================== UNIQUE COLLECTION ENDS 
+============= */
+
+/* =================== CTA SECTION STARTS 
+============= */
+.cta {
+  padding: 10rem 8rem;
+}
+.cta_bg {
+  background-image: url(../images/cta_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 79rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+.cta_wrapper h2 {
+  font-family: var(--primary_font);
+  font-weight: 400;
+  font-size: 6.8rem;
+  max-width: 60.3rem;
+  text-align: center;
+}
+.cta_wrapper span {
+  color: var(--primary_color);
+}
+
+.cta_wrapper .cta_description {
+  font-family: var(--switzer_regular);
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  max-width: 52rem;
+}
+.cta_wrapper .input_container {
+  position: relative;
+  width: 57rem;
+}
+.cta_wrapper .input_container input {
+  font-family: var(--switzer_regular);
+  font-size: 1.6rem;
+  width: 100%;
+  height: 6rem;
+  padding-left: 2rem;
+  padding-right: 17.6rem;
+  box-sizing: border-box;
+}
+.cta_wrapper .input_container input:focus {
+  outline: none;
+}
+
+.cta_wrapper .input_container button {
+  font-family: var(--switzer_semibold);
+  font-size: 1.6rem;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 17.4rem;
+  height: 5.9rem;
+  margin: 0;
+  border: none;
+  background-color: var(--primary_color);
+  color: var(--secondary_color);
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* =================== CTA SECTION ENDS 
 ============= */
