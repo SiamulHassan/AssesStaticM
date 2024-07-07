@@ -17,6 +17,7 @@
   --secondary_color: #1b3936;
   --primary_bg: #f9f9f9;
   --white: #fff;
+  --secondary_text_color: #678784;
 }
 
 html {
@@ -47,6 +48,13 @@ h6 {
 a {
   text-decoration: none;
   display: inline-block;
+}
+
+body {
+  background-image: url(../images/long_bannar.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -80,10 +88,10 @@ a {
   min-height: 110vh;
   height: 100vh;
   background-image: url(../images//play_icon.png),
-    url(../images/bannar_line.svg), url(../images/long_bannar.jpg);
+    url(../images/bannar_line.svg);
   background-repeat: no-repeat, no-repeat;
-  background-size: 8.5rem, 65vw, cover;
-  background-position: 84% 50%, center, center;
+  background-size: 8.5rem, 65vw;
+  background-position: 84% 50%, center;
 }
 
 .bannar .bannr_picture {
@@ -170,12 +178,12 @@ a {
 .feature {
   background-color: var(--primary_bg);
   padding-top: 10.6rem;
-  padding-bottom: 13rem;
 }
 
 .feature_wrapper {
   display: flex;
   gap: 5rem;
+  padding-bottom: 12rem;
 }
 
 .feature_logo {
@@ -218,4 +226,129 @@ a {
   margin-left: 1.3rem;
 }
 
+.feature_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
 /* =================== FEATURE ENDS ============= */
+
+/* =================== ABOUT US STARTS============= */
+.about_us {
+  padding-top: 7.5rem;
+  position: relative;
+  min-height: 162.4rem;
+}
+.about_us-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 23.3rem;
+}
+.about_us-title {
+  text-transform: uppercase;
+  font-family: var(--switzer_regular);
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--primary_color);
+  margin-bottom: 2.5rem;
+}
+.about_us-description {
+  font-family: var(--primary_font);
+  font-size: 6.8rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--white);
+  max-width: 108.3rem;
+}
+.about_us-description span {
+  color: var(--secondary_text_color);
+}
+.about_us_img-1 {
+  width: 40rem;
+  height: 52.6rem;
+  background: linear-gradient(
+      to top right,
+      rgba(27, 57, 54, 0.9),
+      rgba(27, 57, 54, 0.1)
+    ),
+    url("../images/about_us_1.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 7.6rem;
+  right: 6rem;
+  z-index: -1;
+}
+.about_us_img-2 {
+  width: 40rem;
+  height: 34.2rem;
+  background: linear-gradient(
+      to left,
+      rgba(27, 57, 54, 1),
+      rgba(27, 57, 54, 0.1)
+    ),
+    url("../images/about_us_2.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 35.6rem;
+  left: 7.8rem;
+  z-index: -1;
+}
+.about_us_img-3 {
+  width: 40rem;
+  height: 50.2rem;
+  background: linear-gradient(
+      to bottom,
+      rgba(27, 57, 54, 1),
+      rgba(27, 57, 54, 0.1)
+    ),
+    url("../images/about_us_3.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 13rem;
+  left: 25.8rem;
+  z-index: -1;
+}
+.about_us_img-4 {
+  width: 40rem;
+  height: 50.2rem;
+  background: linear-gradient(
+      to bottom,
+      rgba(27, 57, 54, 1),
+      rgba(27, 57, 54, 0.1)
+    ),
+    url("../images/about_us_4.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 10rem;
+  right: 29.8rem;
+  z-index: -1;
+}
+
+/* =================== ABOUT US ENDS 
+
+  padding-left: 3.8rem;
+  padding-right: 6rem;
+============= */
+.unique_collection {
+  margin-top: 8rem;
+  padding-top: 19rem;
+  height: 450px;
+  position: relative;
+  background-color: var(--primary_bg);
+}
+.curved_svg {
+  width: 100%;
+  height: 77px;
+  position: absolute;
+  top: -77px;
+  background-image: url(../images/carvedLine.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
