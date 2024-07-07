@@ -12,6 +12,14 @@
   --switzer_regular: "Switzer-Regular", serif;
   --switzer_semibold: "Switzer-Semibold", serif;
   --avenir_bold: "AvenirNextLTPro-Bold", serif;
+  /* colors */
+  --primary_color: #75ff69;
+  --secondary_color: #1b3936;
+  --white: #fff;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 input,
@@ -65,3 +73,94 @@ a {
 }
 
 /* =============== AVENIR FONT STARTS =============== */
+
+/* =================== BANNAR STARTS ============= */
+.bannar {
+  min-height: 100vh;
+  height: 100vh;
+  background-image: url(../images//play_icon.png),
+    url(../images/bannar_line.svg), url(../images/long_bannar.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 8.5rem, 65vw, cover;
+  background-position: 84% 50%, center, center;
+}
+
+.bannar .bannr_picture {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannar .bannr_picture img {
+  width: 57rem;
+  height: 57rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.bannar .bannr_picture h1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 26.2rem;
+  font-family: var(--primary_font);
+  font-weight: 400;
+  color: var(--white);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.bannar_pic_content .cosy {
+  display: block;
+  margin-left: 11rem;
+  margin-top: 14.5rem;
+  line-height: 16.118rem;
+}
+
+.bannar_pic_content .cabin {
+  color: var(--primary_color);
+  display: block;
+  font-style: italic;
+  margin-left: 26rem;
+  margin-top: 4.5rem;
+  line-height: 18.56rem;
+}
+
+.bannar_pic_content .in_the {
+  display: block;
+  font-size: 3.2rem;
+  margin-top: 3rem;
+  margin-left: 34rem;
+}
+
+.bannar_pic_content .woods {
+  display: block;
+  line-height: 16.18rem;
+  margin-left: 3rem;
+  margin-top: -2.5rem;
+}
+
+.bannar_pic_content {
+  display: block;
+}
+.bannar_pic_content p {
+  text-align: center;
+  position: absolute;
+  bottom: 4rem;
+  transform: translateX(-50%);
+  left: 50%;
+  font-size: 1.8rem;
+  font-family: var(--switzer_regular);
+  max-width: 57rem;
+  color: var(--white);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/* =================== BANNAR ENDS ============= */
